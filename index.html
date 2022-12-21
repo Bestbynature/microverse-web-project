@@ -2,26 +2,65 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Fork Me! FCC: Test Suite Template</title>
+    <title>Performance Survey Form</title>
     <link rel="stylesheet" href="css/style.css">
   </head>
 
   <body>
     <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     
-    <p>Hello World!</p>
-    <!--
+    <!-- <p>Hello World!</p> -->
 
-    Hello Camper!
+    <h1 id="title">Microverse performance survey form</h1>
+  <p id="description">We appreciate your time spent to further improve the platform</p>
 
-    For now, the test suite only works in Chrome!
-    Please read the README below in the JS Editor before beginning.
-    Feel free to delete this message once you have read it.
-    Good luck and Happy Coding!
+  <form id="survey-form" autocomplete="on">
 
-    - The freeCodeCamp Team
+   <label for="username" id="name-label">User Name:</label><br>
+    <input name="username" type="text" id="name" placeholder="Enter your name" required maxlength="15"><br>
 
-    -->
+    <label for="email" id="email-label">E-mail:</label><br>
+    <input type="email" id="email" placeholder="Enter your e-mail" required ><br>
+
+<label for="age" id="number-label">Age:</label><br>
+<input name="age" type="number" id="number" placeholder="Enter your age (in years)" required min="18" max="70"><br>
+
+<label for="dropdown">State of origin:</label><br>
+<select name="dropdown" id="dropdown" required>
+  <option>select one</option>
+  <option>Kwara State</option>
+  <option>Kogi State</option>
+  <option>Abia State</option>
+  <option>Lagos State</option>
+</select><br>
+
+<div>
+<label for="bestfood">What's your favorite food?</label><br>
+
+<label class="radio"><input id="radio" type="radio" name="bestfood" value="jollof rice">Jollof rice</input></label><br>
+
+<label class="radio"><input id="radio" type="radio" name="bestfood" value="porridge">Porridge</input></label><br>
+
+<label class="radio"><input id="radio" type="radio" name="bestfood" value="pounded yam">Pounded yam</input></label><br><br>
+</div>
+
+
+<label for="bestmonths">Which month do you like to swim?</label><br>
+<label><input type="checkbox" name="bestmonths" value="January" id="bestmonths">January</input></label><br>
+
+<label><input type="checkbox" name="bestmonths" value="February" id="bestmonths">February</input></label><br>
+
+<label><input type="checkbox" name="bestmonths" value="March" id="bestmonths" />March</label><br><br>
+
+<label for="comment">State other health challenges</label>
+<textarea name="comment"></textarea>
+<br><br>
+
+
+<input type="submit" id="submit" />
+
+  </form>
+
     <script  src="js/index.js"></script>
   </body>
 </html>
